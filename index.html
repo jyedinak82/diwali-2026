@@ -100,6 +100,7 @@ h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(255
 .btn.alt{background:transparent;color:var(--gold);border:1px solid rgba(255,200,61,.6)}
 .note{font-size:.84rem;color:var(--mute);margin-top:8px}
 .note b{color:#ffd9f0}
+.note.stay{color:var(--gold);opacity:.9}.note.stay b{color:var(--gold)}
 .card{background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:16px;margin-top:12px}
 .card h3{font-family:var(--serif);font-size:1.5rem;color:#fff;margin-bottom:4px}
 .card ul{padding-left:1.1em;color:var(--mute);margin-top:6px}
@@ -168,7 +169,7 @@ footer .big{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-b
 
   <section id="plan">
     <h2>The plan</h2>
-    <p class="lead">Cities are inferred from the fixtures and restaurants, so treat them as "based on the plan so far", not as bookings. Times are UK time with Eastern time next to them.</p>
+    <p class="lead">Cities for Oct 31 and Nov 1 come from the fixtures; the rest follow the hotels and the Nov 4 train. Times are UK time with Eastern time next to them.</p>
 
     <ol class="timeline">
 
@@ -191,16 +192,15 @@ footer .big{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-b
       </li>
 
       <li class="day" data-utc="2026-11-02T19:00:00Z">
-        <div class="dhead"><div class="date">Mon Nov 2 <small>Day 3</small></div><span class="badge b-tbc">Probably Manchester · confirm</span></div>
+        <div class="dhead"><div class="date">Mon Nov 2 <small>Day 3</small></div><span class="badge b-man">Manchester</span></div>
         <h3>🍽️ Dinner at Fenix</h3>
         <p class="meta">Modern Greek · table for 6</p>
         <p class="time"><span>7:00pm UK</span><span>2:00pm ET</span></p>
         <div class="links">
           <a class="btn" href="https://fenixrestaurants.com/" target="_blank" rel="noopener">Fenix website</a>
-          <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=Fenix+Manchester+Goods+Yard+Street+M3+3BG" target="_blank" rel="noopener">Map: Manchester</a>
-          <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=Fenix+Mayfair+80+Piccadilly+London+W1J+8HX" target="_blank" rel="noopener">Map: Mayfair</a>
+          <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=Fenix+Manchester+Goods+Yard+Street+M3+3BG" target="_blank" rel="noopener">Map</a>
         </div>
-        <p class="note"><b>Which Fenix?</b> There are two: Manchester (Goods Yard Street, M3 3BG) and Mayfair, London (80 Piccadilly, W1J 8HX). With Liverpool the day before and Old Trafford the day after, Manchester looks likely, but the plan does not say, so check the booking.</p>
+        <p class="note stay">🛏️ First night in Manchester: check in at <b>The Edwardian</b> (Nov 2 to 4).</p>
       </li>
 
       <li class="day" data-utc="2026-11-03T20:00:00Z">
@@ -223,12 +223,14 @@ footer .big{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-b
           <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=London+Euston+Station" target="_blank" rel="noopener">Map: Euston</a>
         </div>
         <p class="note">Allow time to get to Piccadilly before 11:54am. Wednesday afternoon and evening in London are open.</p>
+        <p class="note stay">🛏️ Check out of <b>The Edwardian</b>, then check in at <b>The Mayfair Hotel</b> in London (Nov 4 to 8).</p>
       </li>
 
       <li class="day open">
         <div class="dhead"><div class="date">Thu Nov 5 <small>Day 6</small></div><span class="badge b-lon">London</span></div>
         <h3>✨ Free day</h3>
         <p class="meta">Nothing planned yet. Room to explore London before Friday's dinner.</p>
+        <p class="note stay">🛏️ Staying at <b>The Mayfair Hotel</b>.</p>
         <p class="note">Ideas are in the Free time section below.</p>
       </li>
 
@@ -254,6 +256,25 @@ footer .big{font-family:var(--serif);font-size:1.6rem;color:var(--gold);margin-b
       </li>
 
     </ol>
+  </section>
+
+  <section id="stay">
+    <h2>Where we're staying</h2>
+    <div class="grid two">
+      <div class="card city">
+        <h3><span>🐝</span> Manchester</h3>
+        <p class="meta">Mon Nov 2 to Wed Nov 4</p>
+        <p><b>The Edwardian Manchester</b></p>
+        <div class="links"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=The+Edwardian+Manchester" target="_blank" rel="noopener">Map</a></div>
+      </div>
+      <div class="card city">
+        <h3><span>🎡</span> London</h3>
+        <p class="meta">Wed Nov 4 to Sun Nov 8</p>
+        <p><b>The Mayfair Hotel</b></p>
+        <div class="links"><a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=The+May+Fair+Hotel+London" target="_blank" rel="noopener">Map</a></div>
+      </div>
+    </div>
+    <p class="note">No stay is listed yet for Oct 31 or Nov 1.</p>
   </section>
 
   <section id="getting-around">
